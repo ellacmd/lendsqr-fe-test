@@ -1,0 +1,12 @@
+.container {
+    background-color: $brand-color;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h1 {
+      color: white;
+      font-family: sans-serif;
+    }
+  }
