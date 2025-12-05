@@ -1,4 +1,23 @@
+@use 'sass:color';
 @use '@/styles/variables' as *;
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: local('AvenirNextLTPro-Regular'),
+        url('@/assets/fonts/AvenirNextLTPro-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: local('AvenirNextLTPro-Bold'),
+        url('@/assets/fonts/AvenirNextLTPro-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
 
 * {
     box-sizing: border-box;
@@ -19,7 +38,6 @@ h3,
 h4,
 h5,
 h6 {
-  
     font-weight: 600;
 }
 
@@ -34,6 +52,6 @@ a {
 }
 
 ::placeholder {
-    color: lighten($color-text, 20%);
+    color: color.adjust($color-text, $lightness: 20%);
     opacity: 1;
 }
