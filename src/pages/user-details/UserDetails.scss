@@ -194,7 +194,7 @@
         width: 100%;
         margin-top: 0;
         scrollbar-width: thin;
-        scrollbar-color: $color-primary rgba(33, 63, 125, 0.08);
+        scrollbar-color: #39cdcc rgba(33, 63, 125, 0.08);
         color: #000000cc;
 
         &::-webkit-scrollbar {
@@ -206,7 +206,7 @@
         }
 
         &::-webkit-scrollbar-thumb {
-            background-color: $color-primary;
+            background: #39cdcc;
             border-radius: 999px;
         }
     }

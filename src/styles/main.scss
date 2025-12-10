@@ -30,7 +30,29 @@ body {
     -webkit-font-smoothing: antialiased;
     color: $color-text;
     font-size: 16px;
-    
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #39cdcc rgba(33, 63, 125, 0.08);
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(33, 63, 125, 0.08);
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #39cdcc;
+    border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: darken(#39cdcc, 10%);
 }
 
 h1,
