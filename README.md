@@ -9,7 +9,6 @@ This is my solution for the Lendsqr Frontend Engineering Assessment - a user man
     -   [Screenshot](#screenshot)
     -   [Links](#links)
     -   [Built with](#built-with)
-    -   [Useful resources](#useful-resources)
 -   [Getting Started](#getting-started)
 
 
@@ -25,29 +24,7 @@ This assessment required building a complete user management dashboard applicati
 -   **Dashboard Page**: Main dashboard displaying users in a table format with summary statistics
 -   **User Details Page**: Comprehensive view of individual user information
 
-#### Key Requirements
 
--   **Visual Fidelity**: Pixel-perfect representation of the Figma design (100% match)
--   **Mock API Integration**: Pull data from a mock API with 500 user records
--   **Data Persistence**: Use IndexedDB (with localStorage fallback) to store and retrieve user details
--   **Mobile Responsive**: Fully responsive design across all device sizes
--   **Code Quality**: Well-structured, maintainable code following best practices
--   **Unit Testing**: Positive and negative scenario testing
--   **TypeScript**: Compulsory language of choice
--   **SCSS**: Required for style processing
-
-#### Assessment Criteria
-
-The solution was evaluated on:
-
-1. **Visual Fidelity**: Picture and pixel-perfect representation of the Figma design
-2. **Code Quality**: Well-structured and well-written code
-3. **Best Practices**: Application of design and architecture best practices
-4. **Unit Testing**: Positive and negative scenario testing
-5. **GitHub Quality**: Clear README, commit history, and documentation
-6. **Naming Conventions**: Consistent variable and function naming
-7. **Semantic Paths**: Proper resource naming and path structure
-8. **Responsive Design**: Proper handling of different media types
 
 ### Screenshot
 
@@ -84,10 +61,6 @@ The solution was evaluated on:
 
 
 
-
-### Useful resources
--   [npoint.io](https://www.npoint.io/) - Mock API service documentation
--   [Tonic Fabricate](https://www.tonic.ai/products/fabricate) - Synthetic data generation tool
 
 
 ## Getting Started
