@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import type { UserStatus } from '@/types/user.types';
+import type { UserStatus, UserProfile } from '@/types/user.types';
 import './FilterDropdown.scss';
 
 type FilterDropdownProps = {
@@ -54,9 +54,9 @@ const FilterDropdown = ({
                 const request = store.getAll();
 
                 request.onsuccess = () => {
-                    const users = request.result;
+                    const users = request.result as UserProfile[];
                     const uniqueOrgs = Array.from(
-                        new Set(users.map((u: any) => u.organization))
+                        new Set(users.map((u) => u.organization))
                     ).sort() as string[];
                     setOrganizations(uniqueOrgs);
                 };

@@ -3,10 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import filterIcon from '@/assets/filter.svg';
 import moreIcon from '@/assets/three-dots.svg';
 import type { UserProfile } from '@/types/user.types';
-import UserStatusBadge from './UserStatusBadge';
-import FilterDropdown, { type FilterValues } from './FilterDropdown';
-import ActionsDropdown from './ActionsDropdown';
-import EmptyState from './EmptyState';
+import UserStatusBadge from '../user-status/UserStatusBadge';
+import FilterDropdown, {
+    type FilterValues,
+} from '../filter-dropdown/FilterDropdown';
+import ActionsDropdown from '../actions-dropdown/ActionsDropdown';
+import EmptyState from '../empty-state/EmptyState';
 import './UserTable.scss';
 
 type UserTableProps = {

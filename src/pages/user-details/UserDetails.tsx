@@ -7,7 +7,7 @@ import starEmptyIcon from '@/assets/star-empty.svg';
 import type { UserProfile } from '@/types/user.types';
 import { getUser } from '@/utils/storage';
 import './UserDetails.scss';
-import Spinner from '@/components/common/Spinner';
+import Spinner from '@/components/common/spinner/Spinner';
 
 const UserDetails = () => {
     const { id } = useParams<{ id: string }>();
