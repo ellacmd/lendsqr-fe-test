@@ -17,7 +17,7 @@ describe('Users API', () => {
 
     beforeEach(() => {
         mockFetch = vi.fn() as FetchMock;
-        global.fetch = mockFetch;
+        globalThis.fetch = mockFetch;
     });
 
     afterEach(() => {
@@ -71,7 +71,7 @@ describe('Users API', () => {
             mockFetch.mockResolvedValueOnce({
                 ok: true,
                 json: async () => mockUsers,
-            } as Response);
+            } as unknown as Response);
 
             const result = await fetchUsers();
 
@@ -129,7 +129,7 @@ describe('Users API', () => {
             mockFetch.mockResolvedValueOnce({
                 ok: true,
                 json: async () => [mockUser],
-            } as Response);
+            } as unknown as Response);
 
             const result = await fetchUsers();
 
@@ -182,7 +182,7 @@ describe('Users API', () => {
                 json: async () => {
                     throw new Error('Invalid JSON');
                 },
-            } as Response);
+            } as unknown as Response);
 
             await expect(fetchUsers()).rejects.toThrow();
         });
